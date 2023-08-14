@@ -1,0 +1,27 @@
+!SESSION 2022-02-25 12:44:19.984 -----------------------------------------------
+eclipse.buildId=4.22.0.I20211124-1800
+java.version=17.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=en_CA
+Framework arguments:  -product org.eclipse.epp.package.modeling.product -keyring /Users/androw/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch aarch64 -product org.eclipse.epp.package.modeling.product -keyring /Users/androw/.eclipse_keyring
+
+!ENTRY org.eclipse.oomph.ui 4 0 2022-02-25 12:44:57.466
+!MESSAGE Invalid thread access
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4907)
+	at org.eclipse.swt.SWT.error(SWT.java:4822)
+	at org.eclipse.swt.SWT.error(SWT.java:4793)
+	at org.eclipse.swt.widgets.Display.error(Display.java:1148)
+	at org.eclipse.swt.widgets.Display.createDisplay(Display.java:899)
+	at org.eclipse.swt.widgets.Display.create(Display.java:883)
+	at org.eclipse.swt.graphics.Device.<init>(Device.java:131)
+	at org.eclipse.swt.widgets.Display.<init>(Display.java:739)
+	at org.eclipse.swt.widgets.Display.<init>(Display.java:730)
+	at org.eclipse.swt.widgets.Display.getDefault(Display.java:1482)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin.performStartup(SetupUIPlugin.java:218)
+	at org.eclipse.oomph.setup.ui.EarlyStartup.earlyStartup(EarlyStartup.java:22)
+	at org.eclipse.oomph.internal.ui.EarlyStart.run(EarlyStart.java:118)
+	at org.eclipse.oomph.internal.ui.EarlyStart$1.run(EarlyStart.java:97)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
